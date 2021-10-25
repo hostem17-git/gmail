@@ -1,0 +1,15 @@
+.app {
+  height: 100vh;
+}
+
+.app_body {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar_section {
+  flex: 0.15;
+}
+.main_section {
+  flex: 0.85;
+}
