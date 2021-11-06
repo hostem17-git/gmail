@@ -1,6 +1,7 @@
 .email_list {
   flex: 1;
-  overflow: scroll;
+  overflow-y: scroll;
+  padding-bottom: 5px;
 }
 
 .email_list_options {

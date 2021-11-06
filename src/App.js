@@ -23,7 +23,7 @@ function App() {
           </div>
           <div className="main_section">
             <Switch> {/*determines Routing*/}
-              <Route path="/mail" >
+              <Route path="/mail">
                 <Mail />
               </Route>
               <Route path="/">

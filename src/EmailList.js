@@ -13,6 +13,7 @@ import Section from './Section'
 import InboxIcon from '@material-ui/icons/Inbox';
 import PeopleIcon from '@material-ui/icons/People';
 import LocalOfferIcon from '@material-ui/icons/LocalOffer';
+import EmailRow from './EmailRow'
 
 function EmailList() {
     return (
@@ -46,10 +47,15 @@ function EmailList() {
                 </div>
             </div>
             <div className="email_list_sections">
-                <Section Icon={InboxIcon} title="Primary" color="red" selected />
+                <Section Icon={InboxIcon} title="Primary" color="rgb(214, 74, 74)" selected />
                 <Section Icon={PeopleIcon} title="Social" color="#1A73E8" />
                 <Section Icon={LocalOfferIcon} title="Promotions" color="green" />
+            </div>
 
+            <div className="email_lists_list">
+                <EmailRow id="test" title="title" subject="subject" description="description description description description description description description description description description description description description description description description description description description description description description description description description description description " time="times" />
+                <EmailRow id="test" title="title" subject="subject" description="description description description description description description description description description description description description description description description description description description description description description description description description description description description " time="times" />
+                <EmailRow id="test" title="title" subject="subject" description="description description description description description description description description description description description description description description description description description description description description description description description description description description description " time="times" />
             </div>
         </div>
     )
