@@ -12,7 +12,10 @@ import MoreVertIcon from "@material-ui/icons/MoreVert"
 import UnfoldMoreIcon from "@material-ui/icons/UnfoldMore"
 import PrintIcon from "@material-ui/icons/Print"
 import ExitToAppIcon from "@material-ui/icons/ExitToApp"
+import LabelImportant from '@material-ui/icons/LabelImportant'
+
 import { useHistory } from "react-router-dom"
+
 import { IconButton } from '@material-ui/core'
 
 function Mail() {
@@ -55,6 +58,17 @@ function Mail() {
                     <IconButton><PrintIcon /></IconButton>
                     <IconButton><ExitToAppIcon /></IconButton>
 
+                </div>
+            </div>
+
+            <div className="mail_body">
+                <div className="mail_body_header">
+                    <h2>Subject</h2><LabelImportant className="mail_important" />
+                    <p className="mail_title">Title</p>
+                    <p className="mail_time">10pm</p>
+                </div>
+                <div className="mail_message">
+                    <p>This is message</p>
                 </div>
             </div>
         </div>
