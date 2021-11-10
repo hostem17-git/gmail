@@ -1,0 +1,86 @@
+.send_mail {
+  position: absolute;
+  bottom: 0px;
+  right: 50px;
+  width: 40%;
+  height: 60%;
+  max-width: 500px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid whitesmoke;
+  box-shadow: 0 12px 4px 4px rgba(0, 0, 0, 0.1);
+  /* overflow: hidden; */
+}
+
+.send_mail_header {
+  background-color: #404040;
+  display: flex;
+  justify-content: space-between;
+  padding: 13px;
+  color: white;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  font-weight: 400;
+}
+
+.send_mail_button {
+  background-color: #3079ed !important;
+  text-transform: capitalize !important;
+  margin: 15px !important;
+  color: white !important;
+  font-weight: bold !important;
+  width: 85px !important;
+  transition: all 1s;
+}
+
+.send_mail > form > input {
+  height: 15px;
+  padding: 10px;
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+  outline: none;
+}
+
+.send_mail_message {
+  height: 125%;
+  padding: 10px;
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+  overflow-y: scroll;
+  outline: none;
+  resize: none;
+}
+
+.send_mail_button:hover {
+  background-color: #5e9bfd !important;
+}
+
+.send_mail_button:active {
+  transform: scale(0.9);
+}
+
+.send_mail_close {
+  cursor: pointer;
+  padding: 3px;
+}
+
+.send_mail_close:hover {
+  background-color: rgb(207, 31, 31);
+  border-radius: 100%;
+}
+
+.send_mail_error {
+  color: red;
+  font-weight: lighter;
+  font-size: 12px;
+  text-align: right;
+}
+.send_mail_input_container {
+  display: flex;
+  align-items: center;
+}
