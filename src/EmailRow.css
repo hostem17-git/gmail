@@ -18,13 +18,13 @@
 
 .email_row_message {
   display: flex;
-  flex: 1;
+  flex: 0.9;
   align-items: center;
   font-size: 13px;
 }
 
 .email_row_message > h4 {
-  width: 65vw;
+  max-width: 65vw;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -34,9 +34,11 @@
 
 .email_row_title {
   padding-right: 15px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .email_row_description {
   color: gray;

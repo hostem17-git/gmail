@@ -4,15 +4,27 @@ import CloseIcon from "@material-ui/icons/Close"
 import { Button } from '@material-ui/core'
 import { useForm } from "react-hook-form"
 import { useDispatch } from 'react-redux';
+import { db } from "./firebase"
+import firebase from 'firebase'
 import { closeSendMessage } from "./features/mailSlice"
 
 function SendMail() {
+    const dispatch = useDispatch();
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = (data) => {
         console.log(data)
-    }
+        db.collection("emails").add(
+            {
+                to: data.to,
+                subject: data.subject,
+                message: data.message,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp()
+            }
+        );
+        dispatch(closeSendMessage());
+    };
 
-    const dispatch = useDispatch();
+
     return (
         <div className="send_mail">
             <div onClick={() => dispatch(closeSendMessage())} className="send_mail_header">
